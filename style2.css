@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url("light_green_and_deep_green_curvy.png");
+  background-size: cover;
+  background-position: center right;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+header .logo-container .logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+.register-btn {
+  margin-left: auto;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section .wiki-article {
+  text-align: left;
+}
+section .wiki-article h1 {
+  font-size: 28px;
+  color: #333;
+}
+section .wiki-article p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+section .wiki-article img {
+  max-width: 100%;
+  height: auto;
+  float: right;
+  margin: 0 0 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}/*# sourceMappingURL=style2.css.map */

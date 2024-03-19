@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url("light_green_and_deep_green_curvy.png");
+  background-size: cover;
+  background-position: center right;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+header .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .logo-container .logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 20px auto;
+}
+section article {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+}
+section article h2 {
+  color: #333;
+}
+section article .article-link {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
