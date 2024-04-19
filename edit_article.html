@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт на основі вікі</title>
+    <title>Edit Article</title>
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -23,16 +22,20 @@
     </header>
 
     <section id="main-content">
-        <button id="edit-article-btn" style="display: none;">Редагувати статтю</button>
-        
-        <article class="wiki-article">
-        </article>
+        <h1>Edit Article</h1>
+        <form id="edit-article-form">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content"></textarea><br>
+            <button type="submit">Save Changes</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Сайт на основі вікі</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="edit_script.js"></script>
 </body>
 </html>

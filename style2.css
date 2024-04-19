@@ -93,4 +93,40 @@ footer {
   padding: 10px;
   background-color: #333;
   color: white;
+}
+
+#edit-article-btn {
+  display: block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#edit-article-form {
+  margin-top: 20px;
+}
+#edit-article-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#edit-article-form input[type=text],
+#edit-article-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#edit-article-form button[type=submit] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=style2.css.map */

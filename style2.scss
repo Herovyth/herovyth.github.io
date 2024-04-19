@@ -1,5 +1,9 @@
+// styles.scss
+
 $primary-font: Arial, sans-serif;
 $background-image: url('light_green_and_deep_green_curvy.png');
+$button-color: #007bff;
+$button-padding: 10px 20px;
 
 body {
     font-family: $primary-font;
@@ -103,4 +107,53 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
+}
+
+// Стилізація кнопки
+#edit-article-btn {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: $button-padding;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#edit-article-form {
+    margin-top: 20px;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        background-color: #333;
+        color: white;
+        padding: $button-padding;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+#create-article-button {
+    background-color: #333; 
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
