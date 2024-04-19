@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("edit-article-form");
     const textarea = document.getElementById("content");
 
-    fetch(`http://127.0.0.1:8000/wikipage/1`)
+    fetch(`http://127.0.0.1:8000/wikipage/1/`)
         .then(response => response.json())
         .then(article => {
             document.getElementById("title").value = article.title;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const title = formData.get('title');
         const content = formData.get('content');
 
-        fetch(`http://127.0.0.1:8000/wikipage/1`, {
+        fetch(`http://127.0.0.1:8000/wikipage/1/`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
